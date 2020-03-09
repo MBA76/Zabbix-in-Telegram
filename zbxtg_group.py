@@ -794,7 +794,11 @@ def main():
 
     uid = None
 
+    uid = None
+
     if tg.type == "channel":
+        uid = zbx_to
+    if tg.type == "group":
         uid = zbx_to
     if tg.type == "private":
         zbx_to = zbx_to.replace("@", "")
